@@ -1,0 +1,616 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body, h1 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+body, h2, p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: left;
+}
+
+
+/* Set a background image for the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    
+}
+
+/* Container to center content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px;
+    position: right;
+}
+
+/* Header styles */
+header {
+    
+    background-image: url('images/background.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    
+}
+
+nav {
+    display: flex;
+    position: absolute;
+    justify-content: right;
+    margin-right: 100px;
+    margin-bottom: 20rem;
+    top: 0;
+    width: 100%;
+}
+
+nav img {
+    max-width: 200px;
+    margin-right: 1000px;
+    position: absolute;
+     /* Use flexbox to align content horizontally */
+    display: flex;
+    justify-content: space-between; /* Add space between logo and navigation */
+    align-items: center; /* Vertically align content */
+    top: 0;
+    width: 40%;
+}
+
+nav ul {
+    list-style: none;
+    justify-content: right;
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    margin-bottom: 0rem;
+    position: absolute;
+    top: 0;
+    width: 40%;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd700; /* Change to your preferred color on hover */
+}
+
+/* Header section styles */
+
+header h1 {
+    
+    padding: 0;
+    color: #fff;
+    display: flex;
+    font-size: 3rem;
+}
+
+header p {
+    
+    font-size: 1.2rem;
+    
+}
+
+.cta-button {
+    margin-bottom: -400px;
+    display: inline-block;
+    background-color: #ffcc00; 
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 5px;
+    /*transition: background-color 0.3s ease;*/
+}
+
+.cta-button:hover {
+    background-color: #ffcc00; /* Change to your preferred color on hover */
+}
+
+/* About section styles */
+#about {
+    padding: 10px 0;
+    background-color: #000;
+    color: #333;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Products section styles (customize as needed) */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+img{width: 100%}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+/****************/
+.main-container{
+    width: 90vw;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.main-container > h2{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 32px;
+}
+.main-container > p{
+    font-weight: 300;
+    padding: 10px 0;
+    opacity: 0.7;
+    text-align: center;
+}
+.category-head{
+    margin: 30px 0;
+}
+.category-head ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.category-title{
+    flex: 0 0 calc(16.6667% - 10px);
+    display: flex;
+    justify-content:center;
+    background: #a8a8a8;
+    padding: 12px;
+    color: #fff;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.category-title:hover{
+    opacity: 0.7;
+}
+.category-title li{
+    padding: 0 10px;
+}
+.category-title span{
+    color: #222;
+}
+
+/** single post **/
+.posts-main-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+.posts-main-container > div{
+    box-shadow: 0px 8px 22px -12px rgba(0, 0, 0, 0.64);
+}
+.post-img{
+    position: relative;
+    object-fit: cover;
+}
+.category-name{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 2px;
+}
+.wheel .category-name{
+    background: #a01517;
+}
+.latex .category-name{
+    background: #f09a49;
+}
+.coilhose .category-name{
+    background: #24863a;
+}
+.patron .category-name{
+    background: #2c2a4a;
+}
+.classic .category-name{
+    background: #a01517;
+}
+
+
+.post-content{
+    padding: 25px;
+}
+.post-content-top{
+    background: #a01517;
+    color: #fff;
+    opacity: 0.8;
+    padding: 5px 0 5px 15px;
+}
+.post-content-top span{
+    padding-right: 20px;
+}
+.post-content-top .fa-comment, .post-content-top .fa-calendar{
+    padding-right: 5px;
+}
+.post-content h3{
+    font-size: 22px;
+    padding: 12px 0;
+    font-weight: 400;
+}
+.post-content p{
+    opacity: 0.7;
+    font-size: 15px;
+    line-height: 1.8;
+}
+.read-btn{
+    border: none;
+    padding: 8px 15px;
+    display: block;
+    margin: 5px auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid #292929;
+    background: transparent;
+    margin-bottom: 40px;
+}
+
+.read-btn:hover{
+    background: #f6f6f6;
+}
+
+
+
+/***************/
+@media(max-width: 1170px){
+    .posts-main-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 768px){
+    .posts-main-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/***********/
+
+.active{
+    background: #f0544f;
+}
+
+#products {
+    padding: 10px 0;
+    background-color: #000;
+    color: #333;
+}
+
+#products h3 {
+    font-size: 1.3rem;
+    margin-bottom: 2px;
+    color: #fff;
+}
+
+/* CSS for product images and their positioning */
+.product-container {
+    position: relative;
+    display: flex; /* Use flexbox to create a row of products */
+    justify-content: flex-end; /* Push products to the right within the container */
+    flex-wrap: wrap; /* Allow products to wrap to the next row if necessary */
+}
+
+.row {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.product {
+    width: 60%;
+    height: 25%;
+    padding: 5px;
+}
+
+.product img {
+    max-width: 50%; /* Shrink the image width to fit its container */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* Additional styling for product descriptions (optional) */
+.product p {
+    font-size: 0.875rem;
+    text-align: center; /* Center-align the product description */
+    margin-top: 10px; /* Add some space between the image and description */
+}
+
+.product a {
+    font-size: 0.8rem;
+    color: #fff;
+    text-align: center; /* Center-align the product description */
+    margin-top: 10px; /* Add some space between the image and description */
+    display: block;
+
+}
+
+/* Team section styles */
+#team {
+    padding: 10px 0;
+    background-color: #000;
+    color: #fff;
+}
+
+#team h2 {
+    font-size: 2rem;
+    background-color: #000;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#about {
+    position: relative;
+    padding-top: 50px;
+    text-align: center;
+    
+    color: #fff;
+}
+
+
+#team h3 {
+    font-family:'caveat', cursive;
+    font-weight:400;
+    font-size: 1.8rem;
+    color: #fff;
+    margin: 100;
+    margin-left: 10px;
+}
+
+#team h4 {
+    font-family:'caveat', cursive;
+    font-weight:400;
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 10;
+    margin-left: 10px;
+}
+
+#team a {
+    text-align: center;
+    color: #fff;
+    margin: 10;
+    margin-left: 10px;
+}
+
+.content-wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 60px 50px;
+    max-width: 950px;
+    overflow: hidden;
+}
+
+@media(min-width: 935px) {
+    .content-wrap {
+        flex-direction: row;
+    }
+}
+
+.profile-img {
+    width: 100px;
+    height:150px;
+    border-radius: 80%;
+}
+
+@media(min-width: 440px) {
+    .profile-img {
+        width: 150px;
+        height: 200px;
+    }
+}
+
+@media(min-width: 935px) {
+    .profile-img {
+        width: 200px;
+        height: 250px;
+    }
+}
+
+
+/* Services section styles (customize as needed) */
+#services {
+    padding: 10px 0;
+    background-color: #000;
+    color: #fff;
+}
+
+#services h2 {
+    font-size: 2rem;
+    background-color: #000;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Contact section styles (customize as needed) */
+#contact {
+    padding: 10px 0;
+    background-color: #000;
+    color: #fff;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    background-color: #000;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Importing the Roboto font from Google Fonts. */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400");
+
+/* Set font of all elements to 'Roboto' */
+* {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+/* Remove outline of all elements on focus */
+*:focus {
+	outline: 0;
+}
+
+body {
+	background: #000;  /* Set background color */
+}
+
+#contact h3 {
+	text-align: center;
+}
+
+/* Add styles to 'container' class */
+.container {
+	padding: 12px 24px 24px 24px;
+	margin: 48px 12px;
+	background: #000;
+	border-radius: 4px;
+}
+
+/* Add styles to 'label' selector */
+label {
+	font-size: 1em;
+	margin-left: 0px;
+}
+
+/* Add styles to 'input' and 'textarea' selectors */
+input[type=text],input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Add styles to show 'focus' of selector */
+input[type=text]:focus,input[type=email]:focus, textarea:focus {
+	border: 1px solid green;
+}
+
+/* Add styles to the submit button */
+input[type=submit] {
+	background: #64B5F6;
+	margin: 0 auto;
+	outline: 0;
+	color: white;
+	border: 0;
+	padding: 12px 24px;
+	border-radius: 4px;
+	transition: all ease-in-out 0.1s;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+/* Add styles for 'focus' property */
+input[type=submit]:focus {
+	background: #A5D6A7;
+	color: whitesmoke;
+}
+
+/* Style 'hover' property */
+input[type=submit]:hover {
+	background: #2196F3;
+}
+
+/* Align items to center of the 'div' with the class 'center' */
+.center {
+	text-align: center;
+}
+
+/* Footer styles */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* Media Queries for Responsive Design (customize as needed) */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav img {
+        max-width: 80px;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+        color: #fff;
+    }
+
+    #hero {
+        padding: 80px 0;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+
+    #about, #products, #contact {
+        padding: 60px 0;
+    }
+
+    #about h2, #products h2, #contact h2 {
+        font-size: 1.5rem;
+    }
+}
